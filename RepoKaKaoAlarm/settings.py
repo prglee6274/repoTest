@@ -84,18 +84,24 @@ WSGI_APPLICATION = 'RepoKaKaoAlarm.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'heroku_48f8b22a339cf47',
-        'USER': 'b576034758c92b',
-        'PASSWORD': '6b179866',
-        'HOST': 'us-cdbr-east-02.cleardb.com',
-        'PORT': '3306',
+        #'ENGINE': 'django.db.backends.mysql',
+        #'NAME': 'open_source',
+        #'USER': 'root',
+        #'PASSWORD': '@dbclfr0506',
+        #'HOST': 'localhost',
+        #'PORT': '3306',
         #'ENGINE': 'django.db.backends.mysql',
         #'NAME': 'margarets$repoalarm',
         #'USER': 'margarets',
         #'PASSWORD': 'db20192808',
         #'HOST': 'margarets.mysql.pythonanywhere-services.com',
         #'PORT' : '3306'
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'iashsyh260co5mrf',
+        'USER': 'unkqybxl7eywk4ya',
+        'PASSWORD': 'd9r5zw280kxz4swa',
+        'HOST': 'aqx5w9yc5brambgl.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
@@ -141,5 +147,9 @@ STATIC_URL = '/static/'
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
 MEDIA_ROOT = '/home/margarets/RepoKaKaoAlarm/media'
 MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/margarets/RepoKaKaoAlarm/static'
+
+#STATIC_ROOT = '/home/margarets/RepoKaKaoAlarm/static'
+#STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'

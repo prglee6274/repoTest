@@ -6,7 +6,7 @@ def batch():
     try:
         conn = None
         #conn = MySQLdb.connect(user='margarets', password='db20192808', db='margarets$repoalarm',host='margarets.mysql.pythonanywhere-services.com', charset='utf8')
-        conn = MySQLdb.connect(user='b576034758c92b', password='6b179866', db='heroku_48f8b22a339cf47',host='us-cdbr-east-02.cleardb.com', charset='utf8')
+        conn = MySQLdb.connect(user='unkqybxl7eywk4ya', password='d9r5zw280kxz4swa', db='iashsyh260co5mrf',host='aqx5w9yc5brambgl.cbetxkdyhwsb.us-east-1.rds.amazonaws.com', charset='utf8')
         curs = conn.cursor()
 
         sql = "SELECT GIT_API_ADDRESS,FAV_REPOSITORY,GIT_UPDATED_AT FROM repository;"
