@@ -16,7 +16,7 @@ class UserView(APIView):
                 raise Exception('관심 레파지토리는 비어 있으면 안됩니다.')
             if len(nick_name) == 0:
                 raise Exception('별명은 비어 있으면 안됩니다.')
-            conn = MySQLdb.connect(user='margarets', password='db20192808', db='margarets$repoalarm',host='margarets.mysql.pythonanywhere-services.com',charset='utf8')
+            conn = MySQLdb.connect(user='b576034758c92b', password='6b179866', db='heroku_48f8b22a339cf47',host='us-cdbr-east-02.cleardb.com', charset='utf8')
             curs = conn.cursor()
 
             sql = "SELECT DATE_FORMAT(NOW(),'%Y%m%d%H%i%s');"
